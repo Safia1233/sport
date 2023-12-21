@@ -1,0 +1,29 @@
+
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">country</th>
+        <th scope="col">capacity</th>
+        
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let staduim of staduims">
+        <th scope="row">{{staduim._id}}</th>
+        <td>{{staduim.name}}</td>
+        <td>{{staduim.country}}</td>
+        <td>{{staduim.capacity}}</td>
+        
+        <td>
+            <button type="button" class="btn btn-outline-warning" >display</button>
+            <button type="button" class="btn btn-outline-success" >Edite</button>
+             <button type="button" class="btn btn-outline-danger">Delete</button>
+           
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
